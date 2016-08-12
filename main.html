@@ -18,9 +18,9 @@
 		$("#div-intro").fadeIn("slow");
 		$("#div-main").fadeOut("slow");
 	}
-	function f_m2i(){
-		$("#div-intro").fadeIn("slow");
-		$("#div-main").fadeOut("slow");
+	function f_i2p01(){
+		$("#div-q01p01").fadeIn("slow");
+		$("#div-intro").fadeOut("slow");
 	}
 </script>
 
@@ -30,12 +30,26 @@
 	</a>
 </div>
 
-<div class="div-video" id="div-intro">
-	<a href="p1.html">
+<div class="div-video" id="div-intro" onclick="f_i2p01();">
+	<a href="#div-q01p01">
 		<p class="txt-mid-center">Todavía escucho las voces que no oí</p>
 	</a>
 </div>
 
+<div class="div-video" id="div-q01p01">
+	<div class="txt-mid-left">
+		<h2>Al encontrarte en un situación de peligro, ¿Cuál crees que sería tu primer reacción?</h2>
+		<a href="intro.html">
+			<p>Pedir ayuda</p>
+		</a>
+		<a href="intro.html">
+			<p>Salir corriendo</p>
+		</a>
+		<a href="intro.html">
+			<p>Afrontar la situación</p>
+		</a>
+	</div>
+</div>
 
 
 </body>

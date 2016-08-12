@@ -5,10 +5,89 @@
 	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
 	<meta name="author" content="CTIN">
 	<title>La Hermandad QUIZ</title>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="assets/js/jquery-3.1.0.min.js"></script>
+
+<script type="text/javascript">
+   var getaudio = $('#player')[0];
+   var mouseovertimer;
+   var audiostatus = 'off';
+  $(document).ready(function() { 
+     if (!$('.speaker').hasClass("speakerplay")) {
+       if (audiostatus == 'off') {
+         $('.speaker').addClass('speakerplay');
+         window.clearTimeout(mouseovertimer);
+         audiostatus = 'on';
+         return false;
+       }
+     } else if ($('.speaker').hasClass("speakerplay")) {
+       getaudio.pause();
+       $('.speaker').removeClass('speakerplay');
+       window.clearTimeout(mouseovertimer);
+       audiostatus = 'on';
+     }
+   });
+
+</script>
 
 
 </head>
 <body>
-TEST
+
+<div class="speaker"></div>
+<audio autoplay loop id="player">
+	<source src="assets/audios/song01.mp3" type="audio/mpeg">
+</audio>
+
+<script type="text/javascript">
+   var getaudio = $('#player')[0];
+   var mouseovertimer;
+   var audiostatus = 'off';
+   $(document).on('click touchend', '.speaker', function() {
+     if (!$('.speaker').hasClass("speakerplay")) {
+       if (audiostatus == 'off') {
+         $('.speaker').addClass('speakerplay');
+         getaudio.load();
+         getaudio.play();
+         window.clearTimeout(mouseovertimer);
+         audiostatus = 'on';
+         return false;
+       } else if (audiostatus == 'on') {
+         $('.speaker').addClass('speakerplay');
+         getaudio.play()
+       }
+     } else if ($('.speaker').hasClass("speakerplay")) {
+       getaudio.pause();
+       $('.speaker').removeClass('speakerplay');
+       window.clearTimeout(mouseovertimer);
+       audiostatus = 'on';
+     }
+   });
+   $('#player').on('ended', function() {
+     $('.speaker').removeClass('speakerplay');
+     audiostatus = 'off';
+   });
+
+</script>
+<div class="divVideo" id="divVideo">
+<a href="#divTitle"><img id="image_background" src="assets/pictures/title01rev.gif" width="100%" height="100%"/></a>
+<video autoplay oncanplay="
+			var image = document.getElementById('image_background');
+			window.scrollTo(0,document.getElementById('divVideo').clientHeight*.1);
+			this.addEventListener('ended',function(){
+				image.style.display = 'inline';
+				this.style.display = 'none';
+			});" >
+	<source src="assets/videos/title01iniNoAudio.webm" type="video/webm">
+</video>
+</div>
+<a href="#divQuote"><div class="divVideo" id="divTitle">
+  <img src="assets/pictures/pistola.gif" width="100%" height="100%"/>
+  <div class="txtV">Conoce que tan maquiavelico eres.</div>
+</div></a>
+<div class="divVideo" id="divQuote">
+  <img src="assets/pictures/pistola.gif" width="100%" height="100%" />
+  <div class="txtV">Conoce que tan maquiavelico eres.</div>
+</div>
 </body>
 </html>

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: DKpoisonIvy;
+    src: url(../fonts/DK_Poison_Ivy.otf);
+}
+
+body {
+	background-color: black;
+	margin: 0;
+  font-family: DKpoisonIvy;
+  color: white;
+  font-size: 2rem;
+}
+
+div {
+    display: block;
+}
+
+.divVideo {
+	margin-top: 0px; 
+	padding-top: 0px;
+  transition-delay:1s;
+}
+
+.txtVideo {
+  margin: -100px 0px 0px 100px;
+  width: 600px;
+  height: 50px;
+  position: relative;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-name: animTitulo;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-font-smoothing: antialiased;
+  /* Standard syntax */
+  animation-name: animTitulo;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  font-smoothing: antialiased;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animTitulo {
+  00% { opacity: 0; }
+  80% { top:50px; opacity: 0; }
+  100% { top:0px; opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes animTitulo {
+  00% { opacity: 0; }
+  80% { top:50px; opacity: 0; }
+  100% { top:0px; opacity: 1;}
+}
+
+video {
+  height: auto;
+  width: 100%;
+}
+
+#image_background {
+  display:none;
+}
+
+
+#player {
+  height: 0;
+  width: 0
+}
+
+.speaker {
+  background-image: url(../pictures/speaker.png);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 100% 0;
+  height: 32px;
+  width: 30px;
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 10px;
+  text-align:right;
+  margin-left: 96%;
+}
+
+.speakerplay {
+  background-position: 0 0;
+  text-align:right;
+}
+
+li {
+    font-family: Helvetica;
+    
+}
+li>div {
+    font-family: DKpoisonIvy;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -44,9 +44,40 @@ h2 {
 #div-q01p01 {
   background-image:url("../../q1/pictures/p01.gif");
 }
+#div-a {
+  background-image:url("../../q1/pictures/a.gif");
+}
+  #div-aa {
+    background-image:url("../../q1/pictures/aa.gif");
+  }
+  #div-ab {
+    background-image:url("../../q1/pictures/ab.gif");
+  }
+  #div-ac {
+    background-image:url("../../q1/pictures/ac.gif");
+  }
+#div-b {
+  background-image:url("../../q1/pictures/b.gif");
+}
+  #div-ba {
+    background-image:url("../../q1/pictures/ba.gif");
+  }
+  #div-bb {
+    background-image:url("../../q1/pictures/bb.gif");
+  }
+#div-c {
+  background-image:url("../../q1/pictures/c.gif");
+}
+  #div-ca {
+    background-image:url("../../q1/pictures/ca.gif");
+  }
+  #div-cb {
+    background-image:url("../../q1/pictures/cb.gif");
+  }
 
 .txt-mid-center {
   margin: 400px 0px 0px 0px;
+  padding: 100px 100px 100px 100px
   width: 100%;
   height: 100%;
   text-align: center;
@@ -60,6 +91,16 @@ h2 {
   width: 50%;
   height: 100%;
   text-align: left;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+.txt-mid-right {
+  margin: 150px -0px 0px 50px;
+  padding-left: 100px
+  width: 100%;
+  height: 100%;
+  text-align: right;
   vertical-align: middle;
   font-size: 2rem;
 }
@@ -82,4 +123,8 @@ h2 {
 .speakerplay {
   background-position: 0 0;
   text-align:right;
+}
+
+.opc-div:hover {
+  background-color: black;
 }

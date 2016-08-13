@@ -22,6 +22,48 @@
 		$("#div-q01p01").fadeIn("slow");
 		$("#div-intro").fadeOut("slow");
 	}
+	function f_a(){
+		$("#div-a").fadeIn("slow");
+		$("#div-q01p01").fadeOut("slow");
+	}
+		function f_aa(){
+			$("#div-aa").fadeIn("slow");
+			$("#div-a").fadeOut("slow");
+		}
+		function f_ab(){
+			$("#div-ab").fadeIn("slow");
+			$("#div-a").fadeOut("slow");
+		}
+		function f_ac(){
+			$("#div-ac").fadeIn("slow");
+			$("#div-a").fadeOut("slow");
+		}
+
+	function f_b(){
+		$("#div-b").fadeIn("slow");
+		$("#div-q01p01").fadeOut("slow");
+	}
+		function f_ba(){
+			$("#div-ba").fadeIn("slow");
+			$("#div-b").fadeOut("slow");
+		}
+		function f_bb(){
+			$("#div-bb").fadeIn("slow");
+			$("#div-b").fadeOut("slow");
+		}
+
+	function f_c(){
+		$("#div-c").fadeIn("slow");
+		$("#div-q01p01").fadeOut("slow");
+	}
+		function f_ca(){
+			$("#div-ca").fadeIn("slow");
+			$("#div-c").fadeOut("slow");
+		}
+		function f_cb(){
+			$("#div-cb").fadeIn("slow");
+			$("#div-c").fadeOut("slow");
+		}
 </script>
 
 <div class="div-video" id="div-main" style="display:block" onclick="f_m2i();">
@@ -39,15 +81,185 @@
 <div class="div-video" id="div-q01p01">
 	<div class="txt-mid-left">
 		<h2>Al encontrarte en un situación de peligro, ¿Cuál crees que sería tu primer reacción?</h2>
-		<a href="intro.html">
-			<p>Pedir ayuda</p>
-		</a>
-		<a href="intro.html">
-			<p>Salir corriendo</p>
-		</a>
-		<a href="intro.html">
-			<p>Afrontar la situación</p>
-		</a>
+		<div class="opc-div" onclick="f_a();">
+			<a href="#div-a">
+				<p>Pedir ayuda</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_b();">
+			<a href="#div-b">
+				<p>Salir corriendo</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_c();">
+			<a href="#div-c">
+				<p>Afrontar la situación</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-a">
+	<div class="txt-mid-right">
+		<h2>¿Olvidas con facilidad a alguien que te ha hecho daño?</h2>
+		<div class="opc-div" onclick="f_aa();">
+			<a href="#div-aa">
+				<p>Si, no soy rencoroso.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_ab();">
+			<a href="#div-ab">
+				<p>Si, el tiempo cobra todo.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_ac();">
+			<a href="#div-ac">
+				<p>No, busco venganza.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-aa">
+	<div class="txt-mid-right">
+		<h2>¿Te enfadas con facilidad cuando alguien entorpece tus actividades?</h2>
+		<div class="opc-div" onclick="f_LUISA();">
+			<a href="#div-LUISA">
+				<p>Solo si es importante.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_MILENA();">
+			<a href="#div-MILENA">
+				<p>No, evito los problemas.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-ab">
+	<div class="txt-mid-right">
+		<h2>¿Trabajas duro, juegas duro y tratas de ser el mejor en lo que haces?</h2>
+		<div class="opc-div" onclick="f_PEDRO();">
+			<a href="#div-PEDRO">
+				<p>Si, me gusta ser el mejor.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_MILENA();">
+			<a href="#div-MILENA">
+				<p>No, todo me da igual.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-ac">
+	<div class="txt-mid-right">
+		<h2>¿Cuándo te enojas te aceleras y realizas actos sin pensar en las consecuencias?</h2>
+		<div class="opc-div" onclick="f_PEDRO();">
+			<a href="#div-PEDRO">
+				<p>Si, soy impulsivo.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_JULIO();">
+			<a href="#div-JULIO">
+				<p>No, me caracterizo por ser paciente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-b">
+	<div class="txt-mid-right">
+		<h2>¿Te consideras ambicioso?</h2>
+		<div class="opc-div" onclick="f_ba();">
+			<a href="#div-ba">
+				<p>Me gusta tener lo mejor.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_bb();">
+			<a href="#div-bb">
+				<p>Me conformo con lo que tengo.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-ba">
+	<div class="txt-mid-right">
+		<h2>¿Te sientes bastante impaciente cuando tienes que esperar resultados?</h2>
+		<div class="opc-div" onclick="f_MILENA();">
+			<a href="#div-MILENA">
+				<p>Si, mi ritmo de vida es acelerado.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_JULIO();">
+			<a href="#div-JULIO">
+				<p>No, me caracterizo por ser paciente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-bb">
+	<div class="txt-mid-right">
+		<h2>¿Te enfadas cuando fracasas en cosas que intentas hacer?</h2>
+		<div class="opc-div" onclick="f_LUISA();">
+			<a href="#div-LUISA">
+				<p>Si me enfado.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_MILENA();">
+			<a href="#div-MILENA">
+				<p>No, lo dejo pasar.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-c">
+	<div class="txt-mid-right">
+		<h2>¿Trabajas duro, juegas duro y tratas de ser el mejor en lo que haces?</h2>
+		<div class="opc-div" onclick="f_ca();">
+			<a href="#div-ca">
+				<p>Si, me gusta ser el mejor.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_cb();">
+			<a href="#div-cb">
+				<p>No, me hes indifetente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-ca">
+	<div class="txt-mid-right">
+		<h2>¿Cuándo te enojas te aceleras y realizas actos sin pensar en las consecuencias?</h2>
+		<div class="opc-div" onclick="f_PEDRO();">
+			<a href="#div-PEDRO">
+				<p>Si, soy impulsivo.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_LUISA();">
+			<a href="#div-LUISA">
+				<p>No, me caracterizo por ser paciente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div-video" id="div-cb">
+	<div class="txt-mid-right">
+		<h2>¿Olvidas con facilidad a alguien que te ha hecho daño?</h2>
+		<div class="opc-div" onclick="f_LUISA();">
+			<a href="#div-LUISA">
+				<p>No soy rencoroso.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="f_JULIO();">
+			<a href="#div-JULIO">
+				<p>Busco venganza.</p>
+			</a>
 	</div>
 </div>
 

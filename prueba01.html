@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quincena!!!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Karlo y Abraham en una batalla de breakdance">
+  <meta name="author" content="Ulises">
+  <meta property="og:title" content="Karlo y Abraham en una batalla de breakdance" />
+  <meta property="og:image" content="https://ulisesprede.github.io/poster.png" />
+  <meta property="og:url" content="http://cu-x.comuv.com/" />
+  <meta property="og:description" content="Karlo y Abraham en una batalla de breakdance" />
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="startup()">
+
+<script type="text/javascript">
+
+function startup() {
+  window.addEventListener("touchstart", handleStart, false);
+  window.addEventListener("touchend", handleEnd, false);
+  window.addEventListener("touchleave", handleEnd, false);
+  window.addEventListener('keydown',this.presionado,false);
+  window.addEventListener('keyup',this.soltado,false);
+}
+
+function presionado(e) {
+  if (e.keyCode==32) {document.getElementById("scr_video").style.margin = '0 0 0 -100%';}
+}
+
+function soltado(e) {
+  if (e.keyCode==32) {document.getElementById("scr_video").style.margin = '0 0 0 0';}
+}
+
+function handleStart(e) {
+  e.preventDefault();
+  document.getElementById("scr_video").style.margin = '0 0 0 -100%';
+}
+
+function handleEnd(e) {
+  e.preventDefault();
+  document.getElementById("scr_video").style.margin = '0 0 0 0';
+}
+
+</script>
+
+<div class="div_video">
+    <video id="scr_video" autoplay loop muted>
+        <source src="vidNF.mp4" type="video/mp4">
+    </video>
+    <audio id="scr_video" autoplay loop>
+        <source src="marcianitoFake1.mp3" type="audio/mp3">
+
+    </audio>
+</div>
+<div id="title_video"><div class="line_sub">USA BARRA ESPACIADORA O TAP</div></div>
+</body>
+</html>
